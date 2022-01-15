@@ -1,0 +1,123 @@
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+        <title>Mavo Web</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+          
+          /* Style the tab */
+          .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+          }
+          
+          /* Style the buttons inside the tab */
+          .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+          
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+          
+          /* Create an active/current tablink class */
+          .tab button.active {
+            background-color: #ccc;
+          }
+          
+          /* Style the tab content */
+          .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+          }
+          </style>
+    </head>
+    <body bgcolor="white">
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'home')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'oservice')">Our Services</button>
+        <button class="tablinks" onclick="openCity(event, 'gallery')">Gallery</button>
+        <button class="tablinks" onclick="openCity(event, 'about')">About Us</button>
+        <button class="tablinks" onclick="openCity(event, 'contact')">Contact Us</button>
+
+      </div>
+      
+
+
+      <marquee>
+          <p><b><i>
+              Mavo_dig-art * Best Quality * Low Price *   
+          </i></b>
+           </p>   
+        </marquee> 
+          <img src="2.png" height="125" width="125" class="imgcls" align="left">
+          <h1 class="animate-charcter">MAVO DIGITAL ART</h1>  
+    </div>
+    <div class='line'>
+      <h2 class='pop-outin'>Welcome To Mavo_dig-art</h2>
+    </div>
+    <div id="home" class="tabcontent">
+
+      </div>
+      <div id="oservice" class="tabcontent">
+
+      </div>
+      
+      <div id="gallery" class="tabcontent">
+
+      </div>
+      <div id="about" class="tabcontent">
+        <h3>About Us</h3>
+        <p>
+            <b>Hi This is Mari and I started MAVO Digital Studio in 2015.<br>I am a Professional Photographer and me and my team specialize in wedding Photography.<br>We provid our Service at Tuticorin(Thoothukudi) and all over Tamil Nadu.<br>If you want the perfect candid shots on your wedding day,please reach out to us.<br></b> 
+        </p>  
+      </div>
+      <div id="contact" class="tabcontent">
+        <h3>
+          Address
+      </h3>
+      <p>
+          Krishnarajapuram 7th Street,<br>Tuticorin-629001.<br>+91 79041 79616 \ +91 63824 11830
+      </p>  
+
+      </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>          
+<footer>
+  <div>
+    <h4>About Us</h4>
+    <b>Hi This is Mari and I started MAVO Digital Studio in 2015.<br>I am a Professional Photographer and me and my team specialize in wedding Photography.<br>We provid our Service at Tuticorin(Thoothukudi) and all over Tamil Nadu.<br>If you want the perfect candid shots on your wedding day,please reach out to us.<br></b> 
+  <h4>Contact US</h4>
+  <p>
+    Krishnarajapuram 7th Street,<br>Tuticorin-629001.<br>+91 79041 79616 \ +91 63824 11830
+</p>  
+</div>
+</footer>
+</html>
